@@ -1,0 +1,24 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String [] wordListOne = {"круглосуточный","трех-звенный","30000-фруктовый","взаимный","обоюдный выигрыш","фронтэнд","На основе веб-технологий","проникающий","умный","шесть сигм","метод критического пути","динамичный"};
+        String [] wordListTwo = {"уполномоченный","трудный","чистый продукт","ориентированный","цетральный","распределенный","кластеризированный","фирменный","нестандартный ум","позиционирование","сетевой","сфокусированный","использованный с выгодай","выровненный","нацеленный на","общий","совместный","ускоренный"};
+        String [] wordListTree = {"процесс","пункт разгрузки", "выход из положения","тип структуры","талант","подход","уровень завоевания внимания","портал","период времени","обзор","образец","пункт следования"};
+        String [] wordNamePeople = {"Степа","Женя","Леша","Олеся","Олег","Настя","Паша","Серега","Саша"};
+
+        int oneLength = wordListOne.length;
+        int twoLength = wordListTwo.length;
+        int treeLength = wordListTree.length;
+        int peopleLength = wordNamePeople.length;
+
+        int rand1 = (int) (Math.random() * oneLength);
+        int rand2 = (int) (Math.random() * twoLength);
+        int rand3 = (int) (Math.random() * treeLength);
+        int rand0 = (int) (Math.random() * peopleLength);
+
+        String phrase = wordNamePeople[rand0] + " " + wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListTree[rand3];
+        System.out.println(phrase);
+    }
+}
